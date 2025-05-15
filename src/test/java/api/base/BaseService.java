@@ -33,6 +33,11 @@ public class BaseService { // wrapper for RestAssured
 
     }
 
+    protected Response patchRequest(Object payload, String endpoint){
+        return requestSpecification.contentType(ContentType.JSON).body(payload).patch(endpoint);
+
+    }
+
     protected Response getRequest(String endpoint){
         return requestSpecification.get(endpoint);
 

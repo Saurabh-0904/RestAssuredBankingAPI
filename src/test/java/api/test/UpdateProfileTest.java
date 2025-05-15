@@ -5,6 +5,7 @@ import api.base.AuthService;
 import api.base.UserManagementService;
 import api.models.request.LoginRequest;
 import api.models.request.ProfileRequest;
+import api.models.response.ProfileResponse;
 import api.models.response.UserProfileResponse;
 import api.models.response.LoginResponse;
 import io.restassured.response.Response;
@@ -45,7 +46,13 @@ public class UpdateProfileTest {
         profileRequest.setEmail("saurabh.bhalerao904@gmail.com");
 
         response = userManagementService.updateProfile(profileRequest, loginResponse.getToken());
-        System.out.println(response.asPrettyString());
+        ProfileResponse profileResponse = response.as(ProfileResponse.class);
+
+        Assert.assertEquals(profileResponse.getId(), 1099);
+        Assert.assertEquals(profileResponse.getFirstName(), "SAURABH__");
+        Assert.assertEquals(profileResponse.getLastName(), "__BHALERAO");
+        Assert.assertEquals(profileResponse.getMobileNumber(), "8889991112");
+        Assert.assertEquals(profileResponse.getEmail(), "saurabh.bhalerao904@gmail.com");
 
     }
 
