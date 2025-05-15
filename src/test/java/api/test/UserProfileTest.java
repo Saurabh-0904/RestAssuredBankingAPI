@@ -3,12 +3,12 @@ package api.test;
 import api.base.AuthService;
 import api.base.UserManagementService;
 import api.models.request.LoginRequest;
-import api.models.response.GetProfileResponse;
+import api.models.response.UserProfileResponse;
 import api.models.response.LoginResponse;
 import io.restassured.response.Response;
 import org.testng.annotations.Test;
 
-public class GetProfileTest {
+public class UserProfileTest {
 
     /*
     To get the profile info flow, will be
@@ -26,9 +26,13 @@ public class GetProfileTest {
 
     UserManagementService userManagementService = new UserManagementService();
     response = userManagementService.getProfile(loginResponse.getToken());
-    GetProfileResponse getProfileResponse = response.as(GetProfileResponse.class);
+    UserProfileResponse userProfileResponse = response.as(UserProfileResponse.class);
 
-    System.out.println(getProfileResponse.getUsername());
+    System.out.println(userProfileResponse.getUsername());
+        System.out.println(userProfileResponse.getFirstName());
+        System.out.println(userProfileResponse.getLastName());
+        System.out.println(userProfileResponse.getMobileNumber());
+        System.out.println(userProfileResponse.getEmail());
     }
 
 }

@@ -1,6 +1,6 @@
 package api.models.response;
 
-public class GetProfileResponse {
+public class UserProfileResponse {
 
     private int id;
     private String username;
@@ -9,7 +9,7 @@ public class GetProfileResponse {
     private String lastName;
     private String mobileNumber;
 
-    public GetProfileResponse(int id, String username, String email, String firstName, String lastName, String mobileNumber) {
+    public UserProfileResponse(int id, String username, String email, String firstName, String lastName, String mobileNumber) {
         super();
         this.id = id;
         this.username = username;
@@ -19,7 +19,7 @@ public class GetProfileResponse {
         this.mobileNumber = mobileNumber;
     }
 
-    public GetProfileResponse() {
+    public UserProfileResponse() {
     }
 
     public int getId() {

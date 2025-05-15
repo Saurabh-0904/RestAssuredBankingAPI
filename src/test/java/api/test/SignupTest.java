@@ -1,14 +1,12 @@
 package api.test;
 
 import api.base.AuthService;
-import api.models.request.LoginRequest;
 import api.models.request.SignupRequest;
-import api.models.response.LoginResponse;
 import io.restassured.response.Response;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class SignupApiTest {
+public class SignupTest {
 
 @Test(description = "Verify that Signup API is working fine")
 

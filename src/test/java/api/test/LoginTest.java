@@ -3,12 +3,11 @@ package api.test;
 import api.base.AuthService;
 import api.models.request.LoginRequest;
 import api.models.response.LoginResponse;
-import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class LoginApiTest {
+public class LoginTest {
 
 @Test(description = "Verify that Login API is working fine")
     public void loginTest(){

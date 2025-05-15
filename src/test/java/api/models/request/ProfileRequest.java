@@ -1,6 +1,6 @@
 package api.models.request;
 
-public class UpdateProfileRequest {
+public class ProfileRequest {
 
         private String firstName;
         private String lastName;
@@ -8,9 +8,9 @@ public class UpdateProfileRequest {
         private String mobileNumber;
 
         // Constructors
-        public UpdateProfileRequest() {}
+        public ProfileRequest() {}
 
-        public UpdateProfileRequest(String firstName, String lastName, String email, String mobileNumber) {
+        public ProfileRequest(String firstName, String lastName, String email, String mobileNumber) {
             this.firstName = firstName;
             this.lastName = lastName;
             this.email = email;
