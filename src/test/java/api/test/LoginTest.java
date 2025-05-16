@@ -23,7 +23,7 @@ public class LoginTest {
     System.out.println(loginResponse.getId());
 
     Assert.assertTrue(loginResponse.getToken() != null);
-    Assert.assertEquals(loginResponse.getEmail(),"saurabh@gmail.com");
+    Assert.assertEquals(loginResponse.getEmail(),"saurabh.bhalerao904@gmail.com");
 
 }
 }

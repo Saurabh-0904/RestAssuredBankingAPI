@@ -1,5 +1,6 @@
 package api.base;
 
+import api.models.request.ChangePasswordRequest;
 import api.models.request.ProfilePatchRequest;
 import api.models.request.ProfileRequest;
 import io.restassured.response.Response;
@@ -23,6 +24,12 @@ public class UserManagementService extends BaseService {
     public Response partialUpdateProfile (ProfilePatchRequest payload , String token){
         setAuthToken(token);
         return patchRequest(payload, BASE_PATH +"profile");
+
+    }
+
+    public Response changePassword (ChangePasswordRequest payload , String token){
+        setAuthToken(token);
+        return putRequest(payload, BASE_PATH +"change-password");
 
     }
 
