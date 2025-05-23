@@ -1,11 +1,14 @@
-package api.test;
+package com.api.test;
 
-import api.base.AuthService;
-import api.models.request.SignupRequest;
+import com.api.base.AuthService;
+import com.api.listeners.TestListener;
+import com.api.models.request.SignupRequest;
 import io.restassured.response.Response;
 import org.testng.Assert;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
+@Listeners(TestListener.class)
 public class SignupTest {
 
 @Test(description = "Verify that Signup API is working fine")
@@ -16,12 +19,12 @@ public class SignupTest {
     //Builder design pattern
     //Calling static class Builder (As it is an inner class so we need to create an object of parent class)
     SignupRequest signupRequest =new SignupRequest.Builder()
-            .firstName("Jaydev")
-            .lastName("Bhalerao")
-            .mobileNumber("9825784231")
-            .username("jay1234")
-            .password("jay@1234")
-            .email("jay@yahoo.com")
+            .firstName("Saurabh_")
+            .lastName("_Bhalerao")
+            .mobileNumber("9130504960")
+            .username("srb1234")
+            .password("srb@1234")
+            .email("srbbhlro@gmail.com")
             .build();
 
     AuthService authService = new AuthService();

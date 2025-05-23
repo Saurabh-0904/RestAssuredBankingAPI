@@ -1,0 +1,44 @@
+17:01:41.607 [main] INFO  com.api.listeners.TestListener - Test Suite Started!!!
+17:01:41.636 [main] INFO  com.api.listeners.TestListener - StartedloginTest
+17:01:41.636 [main] INFO  com.api.listeners.TestListener - Description : Verify that Login API is working fine
+17:01:43.094 [main] INFO  com.api.listeners.TestListener - PassedloginTest
+17:01:43.095 [main] INFO  com.api.listeners.TestListener - Test Suite Completed!!!
+18:28:17.626 [main] INFO  com.api.listeners.TestListener - Test Suite Started!!!
+18:28:17.656 [main] INFO  com.api.listeners.TestListener - StartedloginTest
+18:28:17.656 [main] INFO  com.api.listeners.TestListener - Description : Verify that Login API is working fine
+18:28:18.534 [main] INFO  com.api.filters.LoggingFilter - Base URI: http://64.227.160.186:8080/
+18:28:18.534 [main] INFO  com.api.filters.LoggingFilter - Request HEADER: Accept=*/*
+Content-Type=application/json
+18:28:18.534 [main] INFO  com.api.filters.LoggingFilter - Request PAYLOAD: {"username":"saurabh1234","password":"Saurabh@1234"}
+18:28:18.997 [main] INFO  com.api.filters.LoggingFilter - STATUS CODE: 200
+18:28:18.997 [main] INFO  com.api.filters.LoggingFilter - Response Header: Vary=Origin
+Vary=Access-Control-Request-Method
+Vary=Access-Control-Request-Headers
+Access-Control-Allow-Origin=https://swift.techwithjatin.com
+Access-Control-Allow-Methods=GET, POST, PUT, DELETE, OPTIONS
+Access-Control-Max-Age=3600
+Access-Control-Allow-Headers=Authorization, Content-Type, Accept
+Access-Control-Allow-Credentials=true
+X-Content-Type-Options=nosniff
+X-XSS-Protection=0
+Cache-Control=no-cache, no-store, max-age=0, must-revalidate
+Pragma=no-cache
+Expires=0
+X-Frame-Options=DENY
+Content-Type=application/json
+Transfer-Encoding=chunked
+Date=Fri, 23 May 2025 12:58:17 GMT
+Keep-Alive=timeout=60
+Connection=keep-alive
+18:28:19.036 [main] INFO  com.api.filters.LoggingFilter - Response Payload: {
+    "token": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzYXVyYWJoMTIzNCIsImlhdCI6MTc0ODAwNTA5NywiZXhwIjoxNzQ4MDA4Njk3fQ.nfzAhr8kqIwAJcsgm4LVxkICCCz1eT3vM-uub8kdkoc",
+    "type": "Bearer",
+    "id": 1099,
+    "username": "saurabh1234",
+    "email": "saurabh.bhalerao904@gmail.com",
+    "roles": [
+        "ROLE_USER"
+    ]
+}
+18:28:19.084 [main] INFO  com.api.listeners.TestListener - PassedloginTest
+18:28:19.085 [main] INFO  com.api.listeners.TestListener - Test Suite Completed!!!

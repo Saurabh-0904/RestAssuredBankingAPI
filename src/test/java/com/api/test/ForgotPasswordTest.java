@@ -1,11 +1,11 @@
-package api.test;
+package com.api.test;
 
-import api.base.AuthService;
-import api.models.request.SignupRequest;
+import com.api.base.AuthService;
 import io.restassured.response.Response;
-import org.testng.Assert;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
+@Listeners(com.api.listeners.TestListener.class)
 public class ForgotPasswordTest {
 
 @Test(description = "Verify that Forgot Password API is working fine")

@@ -1,10 +1,10 @@
-package api.test;
+package com.api.test;
 
-import api.base.AuthService;
-import api.base.UserManagementService;
-import api.models.request.ChangePasswordRequest;
-import api.models.request.LoginRequest;
-import api.models.response.LoginResponse;
+import com.api.base.AuthService;
+import com.api.base.UserManagementService;
+import com.api.models.request.ChangePasswordRequest;
+import com.api.models.request.LoginRequest;
+import com.api.models.response.LoginResponse;
 import io.restassured.response.Response;
 import org.testng.Assert;
 import org.testng.annotations.Test;

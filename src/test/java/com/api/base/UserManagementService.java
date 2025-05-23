@@ -1,13 +1,13 @@
-package api.base;
+package com.api.base;
 
-import api.models.request.ChangePasswordRequest;
-import api.models.request.ProfilePatchRequest;
-import api.models.request.ProfileRequest;
+import com.api.models.request.ChangePasswordRequest;
+import com.api.models.request.ProfilePatchRequest;
+import com.api.models.request.ProfileRequest;
 import io.restassured.response.Response;
 
 public class UserManagementService extends BaseService {
 
-    private static final String BASE_PATH = "/api/users/";
+    private static final String BASE_PATH = "/com/api/users/";
 
     public Response getProfile (String token){
         setAuthToken(token);

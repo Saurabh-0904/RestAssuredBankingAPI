@@ -1,4 +1,4 @@
-package api.models.response;
+package com.api.models.response;
 
 public class UserProfileResponse {
 

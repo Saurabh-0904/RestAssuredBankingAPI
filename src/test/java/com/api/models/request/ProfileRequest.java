@@ -1,4 +1,4 @@
-package api.models.request;
+package com.api.models.request;
 
 public class ProfileRequest {
 

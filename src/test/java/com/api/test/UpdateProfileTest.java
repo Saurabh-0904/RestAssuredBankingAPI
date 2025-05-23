@@ -1,13 +1,12 @@
-package api.test;
+package com.api.test;
 
 
-import api.base.AuthService;
-import api.base.UserManagementService;
-import api.models.request.LoginRequest;
-import api.models.request.ProfileRequest;
-import api.models.response.ProfileResponse;
-import api.models.response.UserProfileResponse;
-import api.models.response.LoginResponse;
+import com.api.base.AuthService;
+import com.api.base.UserManagementService;
+import com.api.models.request.LoginRequest;
+import com.api.models.request.ProfileRequest;
+import com.api.models.response.ProfileResponse;
+import com.api.models.response.LoginResponse;
 import io.restassured.response.Response;
 import org.testng.Assert;
 import org.testng.annotations.Test;

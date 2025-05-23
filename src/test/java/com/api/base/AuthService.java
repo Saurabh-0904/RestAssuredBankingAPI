@@ -1,7 +1,7 @@
-package api.base;
+package com.api.base;
 
-import api.models.request.LoginRequest;
-import api.models.request.SignupRequest;
+import com.api.models.request.LoginRequest;
+import com.api.models.request.SignupRequest;
 import io.restassured.response.Response;
 
 import java.util.HashMap;
